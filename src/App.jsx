@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './components/Hero'
 import Subhero from './components/Subhero'
 import Connector from './components/Connector'
+import Scroll3D from './components/Scroll3D'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="font-extrabold tracking-tight text-xl">AMVISION</div>
           <nav className="hidden sm:flex items-center gap-6 text-sm text-zinc-600">
+            <a href="#scroll-3d" className="hover:text-zinc-900">Experiencia 3D</a>
             <a href="#video" className="hover:text-zinc-900">Video</a>
             <a href="#metodo" className="hover:text-zinc-900">Método</a>
             <a href="#contacto" className="hover:text-zinc-900">Contacto</a>
@@ -21,6 +23,10 @@ function App() {
       <main>
         <Hero />
         <Subhero />
+
+        {/* Sección interactiva 3D con scroll */}
+        <Scroll3D />
+
         <Connector />
 
         {/* Placeholder section for video anchor */}
